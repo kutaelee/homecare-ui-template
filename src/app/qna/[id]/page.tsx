@@ -1,0 +1,7 @@
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { ArrowLeft } from 'lucide-react';
+import PageIntro from '@/components/PageIntro';
+const questions=[{id:'sample-question-01',title:'서비스를 고르는 방법은 무엇인가요?'},{id:'sample-question-02',title:'상담 화면에서 날짜는 어떻게 입력하나요?'},{id:'sample-question-03',title:'비공개 질문은 어떻게 표현하나요?'}];
+export function generateStaticParams(){return questions.map(q=>({id:q.id}));}
+export default async function QnaDetail({params}:{params:Promise<{id:string}>}){const {id}=await params;const q=questions.find(x=>x.id===id);if(!q)notFound();return <><PageIntro eyebrow="Q&A 상세" title={q.title} description="게시물 레이아웃을 확인하는 가상 질문입니다."/><article className="mx-auto w-full max-w-3xl space-y-6 px-4 py-14"><div className="rounded-3xl border border-brand-border bg-white p-8"><span className="text-xs font-bold text-primary">질문 · 샘플</span><h2 className="mt-3 mb-6 text-xl font-extrabold">{q.title}</h2><p className="text-sm leading-8 text-soft-gray">이 영역은 고객이 입력한 본문이 표시되는 위치입니다. 이 자료에는 개인 식별 정보나 실제 질문이 포함되지 않습니다.</p></div><div className="rounded-3xl border border-brand-mint bg-info-blue/30 p-8"><span className="text-xs font-bold text-primary">답변 · 샘플</span><p className="mt-4 text-sm leading-8">사용자 문의에 대한 답변 영역입니다. 예시 응답만 표시하며 외부 서버나 운영자 계정과 연결되지 않습니다.</p></div><Link href="/qna" className="inline-flex items-center gap-2 text-sm font-bold text-primary"><ArrowLeft className="size-4"/>목록으로</Link></article></>}
