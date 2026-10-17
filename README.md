@@ -1,8 +1,8 @@
 <div align="center">
-  <a href="https://gyuforge.com/"><img src="docs/gyuforge-banner.svg" width="100%" alt="Homecare UI Template — Made by GYUFORGE"></a>
+  <a href="https://gyuforge.com/"><img src="docs/gyuforge-banner.svg" width="100%" alt="ホームケア UI テンプレート — 制作：GYUFORGE"></a>
 
-  # Homecare UI Template — 日本語版
-  **Made by [GYUFORGE](https://gyuforge.com/)** · Next.js / React / Tailwind CSS · [MIT License](LICENSE)
+  # ホームケア UI テンプレート — 日本語版
+  **制作：[GYUFORGE](https://gyuforge.com/)** · Next.js / React / Tailwind CSS · [ライセンス：MIT](LICENSE)
 </div>
 
 > **独立した日本語エディションです。** 韓国語サイト内の言語切り替えではありません。ページも管理画面も日本語のコンテンツを使います。
@@ -69,7 +69,7 @@ npm run start         # ビルド済みアプリの起動
 - `src/app/globals.css` — 配色、Noto Sans JP
 - `public/illustrations/` — サンプルSVG
 
-日本語版のスクリーンショットは、実際のビルド・ブラウザ検証後に追加する予定です。韓国語版のスクリーンショットを日本語版のものとして表示していません。
+日本語版の実際の画面は、上記の公開デモで確認できます。スクリーンショットは現時点で未収録です。韓国語版の画像を日本語版のものとして流用していません。
 
 ## 安全性・ライセンス
 
@@ -77,4 +77,4 @@ npm run start         # ビルド済みアプリの起動
 
 `npm run public-check` は静的パターン検査であり、完全な監査ではありません。リリース前に `npm run test` / `npm run build` とブラウザ操作検証を推奨します。
 
-[MIT License](LICENSE) — Copyright © 2026 GYUTAE LEE. Project by [GYUFORGE](https://gyuforge.com/). フッターの Made by リンクは任意のクレジットであり、MITの追加条件にはしません。
+[ライセンス：MIT](LICENSE) — 著作権表示：© 2026 GYUTAE LEE。制作：[GYUFORGE](https://gyuforge.com/)。フッターの「制作」リンクは任意のクレジットであり、MITライセンスの追加条件にはしません。
