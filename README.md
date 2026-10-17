@@ -12,6 +12,15 @@
 
 > **UI 데모 전용:** 가상의 브랜드·문구·자료만 사용합니다. 로그인, 상담 접수, 예약, 결제, 실제 관리자 인증 및 영구 저장은 구현되지 않았습니다. 실제 서비스에 바로 배포하기 위한 완성형 제품이 아닙니다.
 
+## Editions / 에디션
+
+| 버전 | 소스 | 설치 및 실행 |
+| --- | --- | --- |
+| **한국어판 (기본)** | [main](https://github.com/kutaelee/homecare-ui-template/tree/main) | `git clone https://github.com/kutaelee/homecare-ui-template.git` |
+| **日本語版 (별도 일본어판)** | [japanese](https://github.com/kutaelee/homecare-ui-template/tree/japanese) | `git clone --branch japanese --single-branch https://github.com/kutaelee/homecare-ui-template.git homecare-ui-template-ja` |
+
+일본어판은 사이트 내부의 언어 전환이 아니라, **별도로 설치·배포 가능한 일본어 UI 템플릿**입니다. 전체 일본어 페이지·샘플 데이터·관리자 화면이 포함되며 한국어 버전에 영향을 주지 않습니다.
+
 ## UI 미리보기
 
 ![홈 화면 UI 미리보기](docs/screenshots/home.jpg)
