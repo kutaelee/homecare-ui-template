@@ -8,6 +8,7 @@ export default function Footer() {
    <div><b className="mb-4 block text-sm text-primary">둘러보기</b><div className="grid grid-cols-2 gap-3 text-xs text-charcoal/80">{services.map(s=><Link key={s.slug} href={`/services/${s.slug}`}>{s.title}</Link>)}<Link href="/cases">사례 갤러리</Link><Link href="/faq">FAQ</Link><Link href="/qna">Q&A</Link><Link href="/contact">문의 안내</Link></div></div>
    <div><b className="mb-4 block text-sm text-primary">템플릿 정보</b><p className="mb-4 text-xs leading-6 text-soft-gray">연락처/결제/회원가입/관리자 기능은 데모 UI입니다. 실제 신청이 접수되지 않습니다.</p><Link href="/admin" className="inline-flex items-center gap-1 text-xs font-bold text-primary">관리자 화면 구조 <ArrowUpRight className="size-3"/></Link></div>
   </div>
-  <div className="border-t border-brand-border px-4 py-5 text-center text-[11px] text-soft-gray">© Sample Homecare Design Template · DEMONSTRATION ONLY · <Link className="underline" href="/terms">이용 안내</Link> · <Link className="underline" href="/privacy">개인정보 안내</Link></div>
+  <div className="border-t border-brand-border px-4 py-5 text-center text-[11px] text-soft-gray">© Sample Homecare Design Template · DEMONSTRATION ONLY · <Link className="underline" href="/terms">이용 안내</Link> · <Link className="underline" href="/privacy">개인정보 안내</Link><div className="mt-2 text-center text-[10px] tracking-wide text-soft-gray/65">Made by <a href="https://gyuforge.com/" target="_blank" rel="noopener noreferrer" className="font-medium underline-offset-2 transition-colors hover:text-primary hover:underline">GYUFORGE</a></div>
+  </div>
  </footer>;
 }
