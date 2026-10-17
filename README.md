@@ -8,6 +8,8 @@
 
 **홈케어 서비스 웹사이트의 화면 구성과 디자인을 보여주는 공개용 Next.js 템플릿입니다.**
 
+**에디션 안내:** 한국어판은 이 `main` 브랜치에서 실행하고, 일본어판은 [Japanese Edition (`japanese` 브랜치)](https://github.com/kutaelee/homecare-ui-template/tree/japanese)로 별도 제공됩니다. 사이트 내부 언어 전환이 아닌 독립 실행 프로젝트입니다. [일본어판 라이브 데모](https://homecare-ui-template-ja.vercel.app/)도 확인할 수 있습니다.
+
 [라이브 UI 미리보기](https://homecare-ui-demo-public.vercel.app/) · [관리자 UI 미리보기](https://homecare-ui-demo-public.vercel.app/admin) · [MIT License](LICENSE)
 
 > **UI 데모 전용:** 가상의 브랜드·문구·자료만 사용합니다. 로그인, 상담 접수, 예약, 결제, 실제 관리자 인증 및 영구 저장은 구현되지 않았습니다. 실제 서비스에 바로 배포하기 위한 완성형 제품이 아닙니다.
