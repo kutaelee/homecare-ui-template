@@ -7,7 +7,7 @@
 
 > **独立した日本語エディションです。** 韓国語サイト内の言語切り替えではありません。ページも管理画面も日本語のコンテンツを使います。
 
-韓国語版: [main](https://github.com/kutaelee/homecare-ui-template/tree/main) · 日本語版: **japanese**
+韓国語版: [main](https://github.com/kutaelee/homecare-ui-template/tree/main) · 日本語版: **japanese** · [日本語デモを開く](https://homecare-ui-template-ja.vercel.app/)\n\n**日本語ライブデモ:** https://homecare-ui-template-ja.vercel.app/\n\n**韓国語ライブデモ:** https://homecare-ui-demo-public.vercel.app/
 
 ## 日本語版を起動する
 
