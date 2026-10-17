@@ -1,2 +1,0 @@
-import PageIntro from '@/components/PageIntro';
-export default function Privacy(){return <><PageIntro eyebrow="개인정보 안내" title="개인정보 처리 안내 예시" description="본 문서는 법률상 개인정보처리방침이 아닌 공개용 템플릿 설명입니다."/><div className="mx-auto max-w-3xl space-y-6 px-4 py-14 text-sm leading-8 text-charcoal"><h2 className="text-xl font-bold">1. 샘플의 정보 처리</h2><p>이 소스에는 실제 고객 정보, 인증·분석·결제 API, DB 접근 코드가 없습니다. 화면 내 폼 제출은 브라우저의 상태 변경만 수행합니다.</p><h2 className="text-xl font-bold">2. 실서비스 전환 시</h2><p>실제 서비스를 운영하려면 개인정보 처리방침, 수집·이용 동의, 보관 기간, 접근 제어, 법적 의무 등을 별도로 설계하고 검토해야 합니다.</p></div></>}

@@ -1,3 +1,0 @@
-import Link from 'next/link';
-import { CalendarDays, MessageSquareText } from 'lucide-react';
-export default function StickyMobileCTA(){return <nav aria-label="모바일 바로가기" className="fixed right-0 bottom-0 left-0 z-40 flex gap-2 border-t border-brand-border bg-warm-white/97 p-3 shadow-lg backdrop-blur-lg md:hidden"><Link className="flex flex-1 items-center justify-center gap-2 rounded-full bg-light-beige py-3 text-xs font-bold text-primary" href="/reservation"><CalendarDays className="size-4"/>예약 UI</Link><Link className="flex flex-1 items-center justify-center gap-2 rounded-full bg-primary py-3 text-xs font-bold text-white" href="/inquiry/new"><MessageSquareText className="size-4"/>견적 UI</Link></nav>}

@@ -1,2 +1,2 @@
 import Link from 'next/link';
-export default function NotFound(){return <div className="mx-auto max-w-xl px-4 py-28 text-center"><p className="text-6xl font-black text-primary">404</p><h1 className="mt-6 text-2xl font-extrabold">화면을 찾을 수 없습니다</h1><p className="mt-3 text-sm text-soft-gray">요청한 샘플 페이지가 없습니다.</p><Link href="/" className="mt-7 inline-block rounded-full bg-primary px-6 py-3 text-xs font-bold text-white">홈으로 돌아가기</Link></div>}
+export default function NotFound(){return <div className="mx-auto max-w-xl px-5 py-28 text-center"><h1 className="text-4xl font-black">404</h1><p className="mt-5 text-sm text-soft-gray">ページが見つかりません。</p><Link href="/" className="mt-8 inline-block rounded-full bg-primary px-6 py-3 text-sm font-bold text-white">トップへ戻る</Link></div>}

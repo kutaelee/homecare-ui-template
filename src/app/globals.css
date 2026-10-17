@@ -1,26 +1,4 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
-@theme {
-  --color-primary: #0E3B2E;
-  --color-primary-hover: #14513F;
-  --color-brand-mint: #A7E3D0;
-  --color-info-blue: #DDF3F5;
-  --color-warm-white: #FBFAF6;
-  --color-light-beige: #F1EADC;
-  --color-soft-gray: #72766F;
-  --color-charcoal: #202622;
-  --color-brand-border: #D8DED6;
-  --font-sans: 'Pretendard', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-:root{--background:#FBFAF6;--foreground:#202622}
-*{box-sizing:border-box}
-body{background:var(--background);color:var(--foreground);font-family:var(--font-sans);margin:0;min-height:100vh;overflow-x:hidden;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
-button,a,input,textarea,select{touch-action:manipulation}
-button{cursor:pointer}
-input,select,textarea{outline:none}
-input:focus-visible,select:focus-visible,textarea:focus-visible{border-color:#0E3B2E;box-shadow:0 0 0 3px #A7E3D070}
-a:focus-visible,button:focus-visible{outline:2px solid #0E3B2E;outline-offset:3px}
-@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-.float-illustration{animation:drift 5s ease-in-out infinite}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
-.demo-grid{background-image:linear-gradient(#0e3b2e08 1px,transparent 1px),linear-gradient(90deg,#0e3b2e08 1px,transparent 1px);background-size:22px 22px}
+@theme{--color-primary:#0E3B2E;--color-primary-hover:#14513F;--color-brand-mint:#A7E3D0;--color-info-blue:#DDF3F5;--color-warm-white:#FBFAF6;--color-light-beige:#F1EADC;--color-soft-gray:#72766F;--color-charcoal:#202622;--color-brand-border:#D8DED6;--font-sans:'Noto Sans JP',system-ui,sans-serif}
+body{font-family:'Noto Sans JP',system-ui,sans-serif;margin:0;overflow-x:hidden}*{box-sizing:border-box}a,button{cursor:pointer}input,textarea,select{outline:none}input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #0E3B2E;outline-offset:2px}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

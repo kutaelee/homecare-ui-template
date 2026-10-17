@@ -1,2 +1,0 @@
-import PageIntro from '@/components/PageIntro';
-export default function Terms(){return <><PageIntro eyebrow="이용 안내" title="템플릿 이용 안내" description="아래 내용은 실제 서비스 이용약관이 아닌 코드 샘플 설명입니다."/><div className="mx-auto max-w-3xl space-y-6 px-4 py-14 text-sm leading-8"><h2 className="text-xl font-bold">데모의 범위</h2><p>사이트의 레이아웃, 타이포그래피, 탐색, 폼, 사례 슬라이더를 보여주기 위한 템플릿입니다. 서비스 계약, 예약 접수, 결제, 로그인이 진행되지 않습니다.</p><h2 className="text-xl font-bold">상용 활용</h2><p>상용 서비스로 활용하기 전 자체 상호, 브랜드 에셋, 개인정보 안내, 보안, 운영 정책, 결제 및 백엔드를 별도 구현해야 합니다.</p></div></>}

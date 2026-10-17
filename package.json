@@ -1,5 +1,5 @@
 {
-  "name": "homecare-public-template",
+  "name": "homecare-ui-template-ja",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,9 +8,8 @@
     "start": "next start",
     "lint": "eslint src",
     "typecheck": "tsc --noEmit",
-    "public-check": "node scripts/public-check.mjs",
-    "test": "npm run public-check && npm run structure-check && npm run lint && npm run typecheck",
-    "structure-check": "node scripts/structure-check.mjs"
+    "public-check": "node scripts/ja-check.mjs",
+    "test": "npm run public-check && npm run lint && npm run typecheck"
   },
   "dependencies": {
     "lucide-react": "^1.23.0",

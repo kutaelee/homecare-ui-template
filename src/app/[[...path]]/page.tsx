@@ -1,0 +1,1 @@
+import JapaneseSite from '@/components/JapaneseSite';export default function Page(){return <JapaneseSite/>}
