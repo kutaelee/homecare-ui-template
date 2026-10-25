@@ -2,15 +2,20 @@
 
 import { useState } from 'react';
 import { ArrowLeftRight, Sparkles } from 'lucide-react';
+import { MediaDisplay, useMediaSlot } from './MediaProvider';
 
 export default function BeforeAfterSlider({
   beforeLabel = '시공 전 (BEFORE)',
   afterLabel = '시공 후 (AFTER)',
+  caseId = 'case-dongrae',
 }: {
   beforeLabel?: string;
   afterLabel?: string;
+  caseId?: string;
 }) {
   const [percent, setPercent] = useState(50);
+  const before = useMediaSlot(`case:${caseId}:before`);
+  const after = useMediaSlot(`case:${caseId}:after`);
 
   return (
     <div className="overflow-hidden rounded-3xl border border-brand-200 bg-white shadow-xl">
@@ -41,12 +46,13 @@ export default function BeforeAfterSlider({
           <p className="text-center text-xs text-brand-500">
             기존 싱크대: 누수 곰팡이 및 스크래치 변색 상태
           </p>
+          {before && <><MediaDisplay asset={before} className="absolute inset-0" /><span className="absolute left-4 top-4 z-10 rounded-full bg-black/70 px-3 py-2 text-xs text-white">{beforeLabel}</span></>}
         </div>
 
         {/* AFTER Foreground Side (Clipped) */}
         <div
-          className="absolute inset-y-0 left-0 overflow-hidden bg-[#faf7f2]"
-          style={{ width: `${percent}%` }}
+          className="absolute inset-0 overflow-hidden bg-[#faf7f2]"
+          style={{ clipPath: `inset(0 ${100 - percent}% 0 0)` }}
         >
           <div
             className="absolute inset-y-0 left-0 flex flex-col justify-between p-6"
@@ -77,6 +83,7 @@ export default function BeforeAfterSlider({
             <p className="text-center text-xs font-semibold text-gold-600">
               클린하우스 직접 시공: 1년 무상 A/S 보증 &amp; 단차 제로 마감
             </p>
+            {after && <><MediaDisplay asset={after} className="absolute inset-0" /><span className="absolute left-4 top-4 z-10 rounded-full bg-black/70 px-3 py-2 text-xs text-white">{afterLabel}</span></>}
           </div>
         </div>
 

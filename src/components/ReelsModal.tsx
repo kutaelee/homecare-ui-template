@@ -3,6 +3,23 @@
 import { useState } from 'react';
 import { X, Play, Eye, Clock, Sparkles } from 'lucide-react';
 import { reels } from '@/data/demo';
+import { MediaDisplay, useMediaSlot, type ManagedAsset } from './MediaProvider';
+
+function ReelThumbnail({ id }: { id: string }) {
+  const asset = useMediaSlot(`reel:${id}`);
+  if (!asset) return null;
+  if (asset.kind === 'youtube') {
+    const id = asset.url.split('/').pop();
+    // eslint-disable-next-line @next/next/no-img-element
+    return <img src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`} alt={asset.title || '시공 영상 썸네일'} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />;
+  }
+  if (asset.kind === 'video') return <video src={asset.url} muted playsInline preload="metadata" className="absolute inset-0 h-full w-full object-cover" aria-hidden="true" />;
+  return null;
+}
+
+function ReelPlayer({ asset }: { asset: ManagedAsset }) {
+  return <div className="aspect-[9/15] bg-black"><MediaDisplay asset={asset} /></div>;
+}
 
 function InstagramIcon({ className = 'size-3.5' }: { className?: string }) {
   return (
@@ -24,6 +41,7 @@ function InstagramIcon({ className = 'size-3.5' }: { className?: string }) {
 
 export default function ReelsModal() {
   const [activeReel, setActiveReel] = useState<(typeof reels)[0] | null>(null);
+  const activeMedia = useMediaSlot(`reel:${activeReel?.id || ''}`);
 
   return (
     <div>
@@ -37,6 +55,7 @@ export default function ReelsModal() {
           >
             {/* Visual Thumbnail */}
             <div className={`aspect-[9/14] w-full bg-gradient-to-br ${reel.thumbnailBg} relative overflow-hidden flex flex-col justify-between p-5 text-white`}>
+              <ReelThumbnail id={reel.id} />
               {/* Category & Duration badges */}
               <div className="flex items-center justify-between z-10">
                 <span className="rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-bold tracking-wider text-gold-300 backdrop-blur-sm">
@@ -95,6 +114,7 @@ export default function ReelsModal() {
               <X className="size-5" />
             </button>
 
+            {activeMedia ? <ReelPlayer asset={activeMedia} /> : <>
             {/* Video Viewport Mock */}
             <div className={`aspect-[9/15] w-full bg-gradient-to-br ${activeReel.thumbnailBg} relative flex flex-col justify-between p-6 select-none`}>
               <div className="z-10 pt-2">
@@ -137,6 +157,7 @@ export default function ReelsModal() {
                 </div>
               </div>
             </div>
+            </>}
           </div>
         </div>
       )}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowUpRight, MapPin, Sparkles } from 'lucide-react';
 import PageIntro from '@/components/PageIntro';
 import { cases } from '@/data/demo';
+import { ManagedMedia } from '@/components/MediaProvider';
 
 export default function CasesPage() {
   return (
@@ -21,6 +22,7 @@ export default function CasesPage() {
               className="group overflow-hidden rounded-3xl border border-brand-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-gold-500 hover:shadow-xl flex flex-col justify-between"
             >
               {/* Graphic Mock Thumbnail */}
+              <ManagedMedia slot={`case:${c.id}:cover`} className="aspect-[16/10] overflow-hidden">
               <div className="relative aspect-[16/10] bg-gradient-to-br from-brand-800 to-brand-950 p-6 text-white flex flex-col justify-between">
                 <div className="flex items-center justify-between">
                   <span className="rounded-full bg-gold-500/90 px-3 py-0.5 text-[11px] font-bold text-white flex items-center gap-1">
@@ -43,6 +45,7 @@ export default function CasesPage() {
               </div>
 
               {/* Body Content */}
+              </ManagedMedia>
               <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                 <div>
                   <h2 className="text-lg font-bold text-brand-900 group-hover:text-gold-600 transition-colors leading-snug line-clamp-2">

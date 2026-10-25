@@ -25,7 +25,7 @@ export default async function CaseDetail({
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-16 md:py-24">
         <div className="grid gap-12 lg:grid-cols-12 items-center">
           <div className="lg:col-span-7">
-            <BeforeAfterSlider beforeLabel={c.before} afterLabel={c.after} />
+            <BeforeAfterSlider caseId={c.id} beforeLabel={c.before} afterLabel={c.after} />
           </div>
 
           <div className="space-y-6 lg:col-span-5">

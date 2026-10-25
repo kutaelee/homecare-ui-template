@@ -19,6 +19,7 @@ import BeforeAfterSlider from '@/components/BeforeAfterSlider';
 import QuickPhotoQuoteForm from '@/components/QuickPhotoQuoteForm';
 import ReelsModal from '@/components/ReelsModal';
 import FAQAccordion from '@/components/FAQAccordion';
+import { ManagedMedia } from '@/components/MediaProvider';
 
 export default function Home() {
   return (
@@ -107,6 +108,7 @@ export default function Home() {
           </div>
 
           {/* Hero Right Visual Mockup Card */}
+          <ManagedMedia slot="hero" eager className="relative mx-auto aspect-[4/3] w-full max-w-lg overflow-hidden rounded-[36px] lg:col-span-5">
           <div className="relative mx-auto w-full max-w-lg lg:col-span-5">
             <div className="relative overflow-hidden rounded-[36px] border border-white/15 bg-brand-800/80 p-7 shadow-2xl backdrop-blur-xl">
               {/* Inner Decorative Kitchen Header */}
@@ -175,6 +177,7 @@ export default function Home() {
               1년 무상 품질보증
             </div>
           </div>
+          </ManagedMedia>
         </div>
       </section>
 

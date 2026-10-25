@@ -22,7 +22,7 @@ export default function ServicesPage() {
             }`}
           >
             <div className="w-full lg:w-1/2">
-              <ServiceVisual icon={s.icon} className="min-h-80" />
+              <ServiceVisual slot={`service:${s.slug}`} icon={s.icon} className="min-h-80" />
             </div>
 
             <div className="flex-1 space-y-5">

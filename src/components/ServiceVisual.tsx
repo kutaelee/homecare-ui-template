@@ -1,12 +1,15 @@
 import Image from 'next/image';
 import type { Service } from '@/data/demo';
+import { ManagedMedia } from './MediaProvider';
 
 export default function ServiceVisual({
   icon,
   className = '',
+  slot = '',
 }: {
   icon: Service['icon'];
   className?: string;
+  slot?: string;
 }) {
   const map: Record<Service['icon'], string> = {
     countertop: 'countertop',
@@ -24,6 +27,7 @@ export default function ServiceVisual({
   const assetName = map[icon] || 'countertop';
 
   return (
+    <ManagedMedia slot={slot} className={`relative min-h-48 overflow-hidden rounded-3xl ${className}`}>
     <div
       className={`demo-grid relative flex min-h-48 items-center justify-center overflow-hidden rounded-3xl bg-brand-50 border border-brand-200/60 ${className}`}
     >
@@ -40,5 +44,6 @@ export default function ServiceVisual({
         CLEAN HOUSE
       </span>
     </div>
+    </ManagedMedia>
   );
 }

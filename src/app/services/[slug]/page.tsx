@@ -28,7 +28,7 @@ export default async function ServiceDetail({
 
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-16 md:py-24">
         <div className="grid gap-12 lg:grid-cols-2 items-center">
-          <ServiceVisual icon={service.icon} className="min-h-96" />
+          <ServiceVisual slot={`service:${service.slug}`} icon={service.icon} className="min-h-96" />
 
           <div className="space-y-6">
             <div className="flex items-center gap-2">

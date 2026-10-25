@@ -3,6 +3,7 @@ import './globals.css';
 import SiteHeader from '@/components/SiteHeader';
 import Footer from '@/components/Footer';
 import StickyMobileCTA from '@/components/StickyMobileCTA';
+import MediaProvider from '@/components/MediaProvider';
 
 export const metadata: Metadata = {
   title: '싱크대 교체·리폼·맞춤가구 전문 | Clean House 클린하우스',
@@ -15,10 +16,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body className="flex min-h-screen flex-col bg-brand-50 pb-16 text-brand-900 md:pb-0">
+        <MediaProvider>
         <SiteHeader />
         <main className="flex w-full flex-1 flex-col">{children}</main>
         <Footer />
         <StickyMobileCTA />
+        </MediaProvider>
       </body>
     </html>
   );

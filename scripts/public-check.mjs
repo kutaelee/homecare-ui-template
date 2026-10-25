@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 const root=path.resolve(import.meta.dirname,'..');
-const scanDirs=['src','public'];
+const scanDirs=['src','public','server'];
 const textExtensions=new Set(['.ts','.tsx','.js','.mjs','.json','.svg','.css','.md','.html']);
 // Source-only checks: reject private brand traces and real external blog/chat integrations.
 // `docs/` is intentionally excluded because it contains narrative disclosure and screenshots.

@@ -22,7 +22,7 @@ const menu = [
   { href: '/admin/cases', title: '시공 사례 포트폴리오', icon: BookOpen },
   { href: '/admin/services', title: '시공 서비스 설정', icon: FileText },
   { href: '/admin/faqs', title: '자주 묻는 질문 관리', icon: HelpCircle },
-  { href: '/admin/assets', title: '카탈로그 / 에셋', icon: Images },
+  { href: '/admin/assets', title: '고객 화면 사진·영상', icon: Images },
   { href: '/admin/settings', title: '운영 및 알림톡 설정', icon: Settings2 },
 ];
 
@@ -77,7 +77,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               운영 가이드
             </span>
             <span>
-              현재 화면은 데모 UI 모드로 작동 중입니다. 데이터 저장 및 수정은 실제 백엔드 API 연결 시 실시간 반영됩니다.
+              데모의 사진·영상 변경은 본인 브라우저에만 보입니다. 직접 운영 시 저장소와 관리자 인증을 설정하면 모든 고객에게 반영됩니다. 그 외 업무 메뉴는 시연용입니다.
             </span>
           </div>
           {children}

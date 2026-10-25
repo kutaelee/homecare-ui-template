@@ -69,7 +69,7 @@ export default function ServiceFilterGrid() {
 
               {/* Service Visual Illustration */}
               <div className="mb-6 overflow-hidden rounded-2xl">
-                <ServiceVisual icon={s.icon} className="min-h-48" />
+                <ServiceVisual slot={`service:${s.slug}`} icon={s.icon} className="min-h-48" />
               </div>
 
               {/* Titles & Desc */}
