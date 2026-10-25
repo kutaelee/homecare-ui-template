@@ -6,7 +6,7 @@ const textExtensions=new Set(['.ts','.tsx','.js','.mjs','.json','.svg','.css','.
 // Source-only checks: reject private brand traces and real external blog/chat integrations.
 // `docs/` is intentionally excluded because it contains narrative disclosure and screenshots.
 const banned=[
- /집요한케어/g,/zipyohan/gi,/kutaelee/gi,/gyuforge/gi,
+ /집요한케어/g,/zipyohan/gi,/kutaelee/gi,
  /(?:rss\.)?blog\.naver\.com/gi,/open\.kakao\.com/gi,
  /https?:\/\/(?:www\.)?instagram\.com\//i,
  /\b(?:tel|sms):/i,

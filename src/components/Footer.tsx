@@ -170,6 +170,16 @@ export default function Footer() {
           <div>
             <p>
               © {new Date().getFullYear()} Clean House Kitchen &amp; Custom Furniture. All rights reserved.
+              {' '}Made by{' '}
+              <a
+                href="https://gyuforge.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GYUFORGE 공식 홈페이지 (새 창)"
+                className="font-semibold text-brand-300 underline underline-offset-4 transition hover:text-gold-300"
+              >
+                GYUFORGE
+              </a>
             </p>
             <p className="mt-1 text-[11px] text-brand-600">
               화면 시연 및 사용자 기능 교체가 가능한 가상 템플릿입니다. 실제 상업 거래 및 결제는 발생하지 않습니다.

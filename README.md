@@ -229,4 +229,6 @@ Sites에는 `out/`의 정적 빌드 결과를 배포합니다. `build:sites`는 
 
 ## 라이선스
 
+Made by [GYUFORGE](https://gyuforge.com/).
+
 코드의 라이선스는 [MIT](LICENSE)입니다. 재사용하거나 배포할 때는 라이선스의 저작권·허가 고지를 유지하세요. 외부 브랜드·연락처·콘텐츠의 이용 권한은 별도로 확인해야 합니다.
