@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" rx="16" fill="#FBF5F2"/>
+  <!-- Countertop slab -->
+  <path d="M60 140 L340 140 L310 90 L90 90 Z" fill="#E4DCD0" stroke="#8E8377" stroke-width="3"/>
+  <rect x="60" y="140" width="280" height="24" rx="2" fill="#C7BCAC" stroke="#8E8377" stroke-width="2"/>
+  <!-- Sink cutout placeholder -->
+  <polygon points="140,110 260,110 245,130 155,130" fill="#FAF7F2" stroke="#6E645A" stroke-width="2"/>
+  <!-- Lower cabinets below -->
+  <rect x="75" y="164" width="120" height="85" rx="4" fill="#FFFFFF" stroke="#C7BCAC" stroke-width="2"/>
+  <rect x="205" y="164" width="120" height="85" rx="4" fill="#FFFFFF" stroke="#C7BCAC" stroke-width="2"/>
+  <rect x="180" y="175" width="4" height="25" rx="2" fill="#C0663A"/>
+  <rect x="216" y="175" width="4" height="25" rx="2" fill="#C0663A"/>
+  <!-- Shine sparkle -->
+  <path d="M280 95 L285 105 L295 110 L285 115 L280 125 L275 115 L265 110 L275 105 Z" fill="#C0663A"/>
+</svg>

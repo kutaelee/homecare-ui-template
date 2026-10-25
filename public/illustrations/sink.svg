@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" rx="16" fill="#FBF5F2"/>
+  <!-- Square sink rim -->
+  <rect x="75" y="70" width="250" height="180" rx="8" fill="#E4DCD0" stroke="#8E8377" stroke-width="3"/>
+  <!-- Inner basin -->
+  <rect x="95" y="90" width="210" height="140" rx="6" fill="#FFFFFF" stroke="#C7BCAC" stroke-width="2"/>
+  <!-- Drain hole & grid -->
+  <circle cx="200" cy="160" r="22" fill="#E4DCD0" stroke="#8E8377" stroke-width="2"/>
+  <circle cx="200" cy="160" r="12" fill="#8E8377"/>
+  <!-- Modern gooseneck faucet -->
+  <path d="M200 65 L200 45 Q200 25 180 25 Q160 25 160 45 L160 60" fill="none" stroke="#C0663A" stroke-width="6" stroke-linecap="round"/>
+  <!-- Water drops -->
+  <circle cx="160" cy="80" r="3" fill="#CF7A52"/>
+  <circle cx="160" cy="95" r="2.5" fill="#CF7A52"/>
+</svg>

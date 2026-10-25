@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="292" viewBox="0 0 1180 292" role="img" aria-label="Homecare UI Template — made by GYUFORGE">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102B24"/><stop offset="1" stop-color="#0E3B2E"/></linearGradient><linearGradient id="m" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D7F4E5"/><stop offset="1" stop-color="#91D5BB"/></linearGradient></defs>
+<rect width="1180" height="292" fill="url(#b)" rx="24"/><g opacity=".12" fill="none" stroke="#C3F0DA" stroke-width="1.5"><circle cx="1122" cy="42" r="120"/><circle cx="1122" cy="42" r="168"/><circle cx="1122" cy="42" r="221"/><path d="M920 292L1180 32M884 292L1180 -4"/></g>
+<g transform="translate(60 55)"><rect width="82" height="82" rx="24" fill="url(#m)"/><path d="M23 46L41 27L59 46V61H46V49H36V61H23Z" fill="#0E3B2E"/><path d="M20 44L41 23L62 44" stroke="#0E3B2E" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="165" y="93" fill="#B1E6CE" font-size="15" letter-spacing="5" font-weight="700" font-family="Arial, sans-serif">OPEN SOURCE / WEBSITE UI KIT</text>
+<text x="165" y="148" fill="#FFFFFF" font-size="43" font-weight="800" font-family="Arial, sans-serif">Homecare UI Template</text>
+<text x="165" y="187" fill="#C6DCD1" font-size="19" font-family="Arial, sans-serif">Responsive website and admin dashboard demo</text>
+<rect x="165" y="217" width="229" height="35" rx="17.5" fill="#A7E3D0"/><text x="182" y="240" fill="#0E3B2E" font-size="14" font-weight="800" letter-spacing="1" font-family="Arial, sans-serif">MADE BY GYUFORGE</text>
+<text x="417" y="240" fill="#D5EBE0" font-size="15" font-family="Arial, sans-serif">gyuforge.com</text>
+</svg>

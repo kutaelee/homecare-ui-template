@@ -1,0 +1,32 @@
+{
+  "name": "homecare-public-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:sites": "node scripts/build-sites.mjs",
+    "start": "next start",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "public-check": "node scripts/public-check.mjs",
+    "test": "npm run public-check && npm run structure-check && npm run lint && npm run typecheck",
+    "structure-check": "node scripts/structure-check.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.23.0",
+    "next": "16.2.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

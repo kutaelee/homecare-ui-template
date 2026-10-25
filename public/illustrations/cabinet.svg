@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" rx="16" fill="#FBF5F2"/>
+  <!-- Kitchen lower cabinet frame -->
+  <rect x="70" y="60" width="260" height="190" rx="6" fill="#FFFFFF" stroke="#8E8377" stroke-width="3"/>
+  <line x1="200" y1="60" x2="200" y2="250" stroke="#8E8377" stroke-width="3"/>
+  <!-- Left door bevel -->
+  <rect x="80" y="70" width="110" height="170" rx="3" fill="#FAF7F2" stroke="#E4DCD0" stroke-width="2"/>
+  <rect x="175" y="140" width="4" height="30" rx="2" fill="#C0663A"/>
+  <!-- Right door bevel -->
+  <rect x="210" y="70" width="110" height="170" rx="3" fill="#FAF7F2" stroke="#E4DCD0" stroke-width="2"/>
+  <rect x="221" y="140" width="4" height="30" rx="2" fill="#C0663A"/>
+  <!-- Plinth/Kickplate -->
+  <rect x="70" y="240" width="260" height="16" fill="#C7BCAC"/>
+</svg>
